@@ -31,13 +31,13 @@
          
         // GRID
 
-        // for (let i = 100; i < 900; i += 100) {
-        //     createPlatform(i, 0, 0.01, 100);
-        // }
+        for (let i = 100; i < 900; i += 100) {
+            createPlatform(i, 0, 0.01, 100);
+        }
 
-        // for (let i = 100; i < 700; i += 100) {
-        //     createPlatform(0, i, 10, 0.1);
-        // }
+        for (let i = 100; i < 700; i += 100) {
+            createPlatform(0, i, 10, 0.1);
+        }
 
 
 
@@ -54,10 +54,13 @@
         // example:
         // createPlatform(400, 250);
         // createPlatform(170, 460, 0.5);
-        createPlatform(400,550, 0.5, 0.2);
-        createPlatform(400,400, 0.5, 0.2);
-        createPlatform(500,300, 0.5, 0.2)
-        createPlatform(200,500, 0.5, 0.2)
+        createPlatform(400,550, 0.3, 0.2);
+        createPlatform(275,400, 0.3, 0.2);
+        createPlatform(500,300, 0.3, 0.2);
+        createPlatform(50,500,  0.3, 0.2);
+        createPlatform(100,500, 0.3, 0.2);
+        createPlatform(0,100, 1.7, 0.5);
+        createPlatform(500, 500, 0.3, 10)
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     }
