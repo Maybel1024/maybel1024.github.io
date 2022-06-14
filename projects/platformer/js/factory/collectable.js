@@ -24,6 +24,13 @@
                 case 'kennedi':
                     collectable.scale.x = collectable.scale.y = 0.9;
                     break;
+
+                case 'wolf':
+                    collectable.scale.x = collectable.scale.y = 0.3; 
+                    break;
+                case 'paws': 
+                collectable.scale.x = collectable.scale.y =0.3; 
+                break; 
                 
                 default:
                     // code
