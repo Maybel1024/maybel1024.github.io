@@ -79,7 +79,7 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE*/
-				positionX = positionX + 50
+				positionX = positionX + 10
 				moveBoxTo(positionX);
 
 			};
@@ -91,7 +91,8 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0; 
-				positionX = positionX + 10
+				points += 1;
+				comsole.log(points)
 
 			};
 		})();

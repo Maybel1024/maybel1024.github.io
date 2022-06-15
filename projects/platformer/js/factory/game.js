@@ -15,7 +15,7 @@
         
         function render() {
             const asset = game.player.asset;
-            game.debug.bodyInfo(asset, 32, 32);
+            game.debug.bodyInfo(asset,32, 32);
             //game.debug.spriteBounds(asset);
             game.debug.body(asset);
             if(game.projectile) {

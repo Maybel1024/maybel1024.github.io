@@ -15,7 +15,7 @@
         game.load.image('max', './asset/collectable/max-head.png');
         game.load.atlas('halle', './asset/halle/phaser-json-array/halle.png', './asset/halle/phaser-json-array/halle.json');
         game.load.image('wolf', './asset/collectable/modern-wolf-logo.jpeg'); 
-        game.load.image('paws', './asset/collectable/paws.jpeg'); 
-        game.load.image('fireball', './asset/blue-fireball.png');
+        game.load.image('paws', './asset/collectable/paws.png'); 
+        game.load.image('fireball', './asset/bluefireball.png');
     };
 })(window);
