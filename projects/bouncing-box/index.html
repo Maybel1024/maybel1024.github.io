@@ -51,10 +51,12 @@
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 			changeBoxText(0);
+			 
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
+
 			}
 
 			// changes the text displayed on the Box
@@ -68,8 +70,8 @@
 
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-			var points = 1; 
-
+			var points = 0;
+			var speed = 10; 
 
 
 			/* 
@@ -79,9 +81,18 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE*/
-				positionX = positionX + 10
+				positionX = positionX + speed; 
 				moveBoxTo(positionX);
-
+				
+				if (positionX > boardWidth) {
+					speed = -speed; 
+					console.log(positionX);
+				}	
+				if (positionX < 0) {
+					speed = -speed; 
+					console.log(positionX); 
+				}
+					
 			};
 
 			/* 
@@ -90,10 +101,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				positionX = 0; 
+				positionX = 0;
 				points += 1;
-				comsole.log(points)
-
+				changeBoxText(points)
+				speed += 3; 
 			};
 		})();
 	</script>

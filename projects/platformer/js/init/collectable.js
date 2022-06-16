@@ -40,8 +40,8 @@
 
         // example: 
         createCollectable(type.paws, 220, 350);
-        createCollectable(type.db, 550, 50);
-        createCollectable(type.db, 520, 400);
+        createCollectable(type.paws, 550, 50);
+        createCollectable(type.paws, 520, 400);
         createCollectable(type.wolf, 340, 250);
         createCollectable(type.max, 850, 100);
         createCollectable(type.max, 80, 320);
