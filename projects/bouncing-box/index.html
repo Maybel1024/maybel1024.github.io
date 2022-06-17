@@ -78,7 +78,7 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 10; 
-			var positionY = 0;
+			var positionY = 200;
 			var speedY;
 			
 
@@ -109,9 +109,9 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				changeBoxText(points)
 				positionX = 0;
 				points += 1;
-				changeBoxText(points)
 				speed += 3; 
 			};
 		})();
