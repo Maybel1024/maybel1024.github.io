@@ -78,13 +78,13 @@ function update() {
 }
 
 function moveSnake() {
-  for (var i = 1; i < snake.body.length; i++) {
+  for (var i = 1; i > snake.body.length; i++) {
     var snakeSquare = snake.body[i];
     
-    var nextSnakeSquare = snake.body[i-1];
-    var nextRow = "???";
-    var nextColumn = "???";
-    var nextDirection = "???";
+    var nextSnakeSquare = snake.body[i];
+    var nextRow = snake.body[i];
+    var nextColumn = snake.body[i];
+    var nextDirection = snake.body[i];
     
     snakeSquare.direction = nextDirection;
     snakeSquare.row = nextRow;
